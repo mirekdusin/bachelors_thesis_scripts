@@ -4,9 +4,9 @@ from concurrent.futures.thread import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 
 
-def get_anchors(div, str):
+def get_anchors(div, class_name):
     all_anchors = []
-    content = div.find_all('div', class_=str)
+    content = div.find_all('div', class_=class_name)
     
     for cont in content:
         anchors = cont.find_all('a')
