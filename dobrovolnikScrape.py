@@ -17,8 +17,8 @@ def get_anchors(div, class_name):
     return sorted(set(all_anchors))
 
 
-def get_date(div, str):
-    span = div.select('span.' + str)
+def get_date(div, str_name):
+    span = div.select('span.' + str_name)
     return span[0].text.rstrip("\n") if span else ""
 
 
