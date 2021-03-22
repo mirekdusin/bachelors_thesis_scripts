@@ -3,7 +3,6 @@
 $file = fopen("binary.csv", "r");
 
 $all_comb = array();
-$line = fgets($file);
 
 while (!feof($file)) {
     $line = fgets($file);
