@@ -19,31 +19,31 @@ def parse_row(row):
             re.sub('\s+', ' ', part)
             if part == 'Zdravotnictví':
                 transformed_row.insert(1, 1)
-            if part == 'Lidé bez domova':
+            elif part == 'Lidé bez domova':
                 transformed_row.insert(2, 1)
-            if part == 'Senioři':
+            elif part == 'Senioři':
                 transformed_row.insert(3, 1)
-            if part == 'Životní prostředí':
+            elif part == 'Životní prostředí':
                 transformed_row.insert(4, 1)
-            if part == 'Kultura':
+            elif part == 'Kultura':
                 transformed_row.insert(5, 1)
-            if part == 'Benefiční akce':
+            elif part == 'Benefiční akce':
                 transformed_row.insert(6, 1)
-            if part == 'Foreign volunteer':
+            elif part == 'Foreign volunteer':
                 transformed_row.insert(7, 1)
-            if part == 'Práce se zvířaty':
+            elif part == 'Práce se zvířaty':
                 transformed_row.insert(8, 1)
-            if part == 'Sport':
+            elif part == 'Sport':
                 transformed_row.insert(9, 1)
-            if part == 'Mimořádné události':
+            elif part == 'Mimořádné události':
                 transformed_row.insert(10, 1)
-            if part == 'Děti a mládež':
+            elif part == 'Děti a mládež':
                 transformed_row.insert(11, 1)
-            if part == 'Lidé s hendikepem':
+            elif part == 'Lidé s hendikepem':
                 transformed_row.insert(12, 1)
-            if part == 'Lidská práva':
+            elif part == 'Lidská práva':
                 transformed_row.insert(13, 1)
-            if part == 'Lidé s autismem':
+            elif part == 'Lidé s autismem':
                 transformed_row.insert(14, 1)
 
         parts = row[2].split("|")
@@ -52,35 +52,35 @@ def parse_row(row):
             re.sub('\s+', ' ', part)
             if part == 'Produkce audio/video':
                 transformed_row.insert(15, 1)
-            if part == 'Grafika a design':
+            elif part == 'Grafika a design':
                 transformed_row.insert(16, 1)
-            if part == 'Administrativa':
+            elif part == 'Administrativa':
                 transformed_row.insert(17, 1)
-            if part == 'jiné':
+            elif part == 'jiné':
                 transformed_row.insert(18, 1)
-            if part == 'Fundraising':
+            elif part == 'Fundraising':
                 transformed_row.insert(19, 1)
-            if part == 'Management':
+            elif part == 'Management':
                 transformed_row.insert(20, 1)
-            if part == 'Umělecká tvorba':
+            elif part == 'Umělecká tvorba':
                 transformed_row.insert(21, 1)
-            if part == 'Daně a účetnictví':
+            elif part == 'Daně a účetnictví':
                 transformed_row.insert(22, 1)
-            if part == 'Vzdělávání, studijní nebo diskusní zaměření':
+            elif part == 'Vzdělávání, studijní nebo diskusní zaměření':
                 transformed_row.insert(23, 1)
-            if part == 'Technologie a online':
+            elif part == 'Technologie a online':
                 transformed_row.insert(24, 1)
-            if part == 'Marketing':
+            elif part == 'Marketing':
                 transformed_row.insert(25, 1)
-            if part == 'Personalistika':
+            elif part == 'Personalistika':
                 transformed_row.insert(26, 1)
-            if part == 'Doprovázení':
+            elif part == 'Doprovázení':
                 transformed_row.insert(27, 1)
-            if part == 'Volnočasové aktivity':
+            elif part == 'Volnočasové aktivity':
                 transformed_row.insert(28, 1)
-            if part == 'Psaní a překlady':
+            elif part == 'Psaní a překlady':
                 transformed_row.insert(29, 1)
-            if part == 'Manuální práce':
+            elif part == 'Manuální práce':
                 transformed_row.insert(30, 1)
 
         transformed_row.insert(31, re.sub('\s+', ' ', row[3]))
